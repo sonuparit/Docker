@@ -145,7 +145,7 @@ sudo firewall-cmd --permanent --add-port=443/tcp
 sudo firewall-cmd --permanent --add-port=8000-9000/tcp
 ```
 
- - Trust the Docker network interface to prevent internal blocks:
+ - Trust the Docker network interface to prevent internal blocks (this does not work on my system and causes the docker to stop, use with caution):
 
 ``` bash
 sudo firewall-cmd --permanent --zone=trusted --add-interface=docker0
